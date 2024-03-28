@@ -17,15 +17,15 @@
     --fontAmao: "Tangerine", cusive;
 }
 .Principal {
-    background-color: #B94394;
-    width: 100%;
-    height: 100%;
+    background-color: white;
+   
 }
 .Section {
     background-color: white;
     width: 90%;
     height: 100vh;
     margin: auto;
+   
 }
 .img img {
     width: 50px;
@@ -74,14 +74,18 @@
 }
 .aside ol {
     color: var(--cor2);
+    margin-bottom: 40px;
 }
 .aside li {
     margin: 0px 0px 5px 40px;
 }
 .aside1 {
-    width: 100%;
+    width: 80%;
     user-select: none;
     text-align: left;
+    border: rgba(128, 128, 128, 0.062) 1px solid;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.158);
 }
 .buttoncada {
     margin: 40px 0px 20px 40px ;
@@ -102,9 +106,17 @@
     padding-left: 20px;
     font-size: 1.2rem;
 }
-
-thead th {
+.aside1 table {
+    margin: auto;
+}
+.aside1 td {
+    height: 50px;
+    padding-left: 20px;
+}
+table th {
     border: 1px solid black;
+    margin: 40px;
+    text-align: center;
 }
 .tdimagem img {
     width: 16px;
@@ -125,3 +137,32 @@ thead th {
     opacity: 1;
     z-index: 1;
 }
+.CaixaFormu {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+}
+.DataAss {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 60px 20px 40px;
+
+}
+.Foot {
+    height: 20px;
+    padding: 10px;
+    background-color: #c14599;
+    color: var(--cor1);
+    text-align: center;
+}
+.Assinar input {
+    font-family: var(--fontAmao);
+    font-size: 30px;
+    text-align: center;
+}
+
