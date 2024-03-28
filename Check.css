@@ -2,8 +2,126 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --cor1: #edb61d;
+    --cor2: #c14599;
+
+    --fontePadrao: "Poppis"
+    , sans serif;
+    --fontAmao: "Tangerine", cusive;
+}
+.Principal {
+    background-color: #B94394;
+    width: 100%;
+    height: 100%;
+}
+.Section {
+    background-color: white;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+.img img {
+    width: 50px;
+    margin: 20px 40px;
+}
+.Conteiner {
+    display: flex;
+    margin: 0px 5px 5px 40px;
+}
+.Rosa {
+    width: 9px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--cor2);
+}
+.Conteiner h1 {
+    margin: 13px 0px;
+    color: var(--cor1);
+    font-family: var(--fontePadrao);
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.Container1 {
+    display: flex;
+    margin: 0px 5px 5px 40px;
+}
+.Amarela {
+    width: 10px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--cor1);
+}
+.Container1 h2 {
+    color: var(--cor2);
+    font-family: var(--fontePadrao); 
+}
+.aside {
+    margin: 40px 5px 5px 40px;
+}
+.aside h2 {
+    color: var(--cor1);
+    font-family: var(--fontePadrao);
+    font-weight: bold;
+    font-size: 30px;
+}
+.aside ol {
+    color: var(--cor2);
+}
+.aside li {
+    margin: 0px 0px 5px 40px;
+}
+.aside1 {
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+.buttoncada {
+    margin: 40px 0px 20px 40px ;
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: var(--cor2);
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+.aside1 th {
+    height: 30px;
+    background-color:var(--cor2);
+    color: var(--cor1);
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+thead th {
+    border: 1px solid black;
+}
+.tdimagem img {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+.caixaCadastro {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+.caixaCadastro .ative {
+    opacity: 1;
+    z-index: 1;
 }

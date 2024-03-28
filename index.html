@@ -12,15 +12,63 @@
 <body>
    <main class="Principal">
     <section class="Section">
-        <header>
-            <img src="" alt="">
+        <header class="img">
+            <img src="./img/krapido.jpeg" alt="Krapido">
         </header>
         <div class="Conteiner">
             <div class="Rosa"></div>
-            <h1>Check List de aquecimento das moto paradas</h1>
+            <h1>Check List de aquecimento das moto paradas!</h1>
         </div>
         <div class="Container1">
-            
+            <div class="Amarela"></div>
+            <h2>Este aplicativo serve para fazer Check list de aquecimento das motos paradas a mais de 3 dias.</h2>
+        </div>
+        <aside class="aside">
+            <h2>Passos</h2>
+            <ol>
+                <li>Verificar o nível do óleo do motor.</li>
+                <li>Verificar o nível de combustivel.</li>
+                <li>Ligar a moto pelo start.</li>
+                <li>Ligar a moto pelo kiks caso não pegar via start.</li>
+                <li>Deixar ligada durante 15 minutos depois desligar.</li>
+            </ol>
+        </aside>
+        <aside class="aside1">
+
+            <button id="CadaMoto" class="buttoncada">Cadastar e checar</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Moto n°</th>
+                        <th>Ok</th>
+                        <th>Nok</th>
+                        <th>Observações</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td class="tdimagem" id="Tdimagem"><img src="ok.png" alt="imagem Ok"></td>
+                    <td class="tdimagem" id="Tdimagem"><img src="nok.png" alt="imagem nok"></td>
+                    <td>Bom funcionamento</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tbody>
+            </table>
+        </aside>
+        <div class="caixaCadastro" id="caixaCadastro">
+            <form id="CaixaFormu" class="CaixaFormu">
+                <input type="number" name="numeroMota" id="numeroMota" placeholder="Número da Moto" required>
+                <input type="text" name="OK" id="Ok" placeholder="Moto em bom estado" required>
+                <input type="text" name="Nok" id="NOK" placeholder="Moto em mau estado">
+                <input type="text" name="OBS" id="OBS" placeholder="Observação da moto">
+            </form>
+            <footer>
+                <button>Salvar</button>
+                <button>Cancelar</button>
+            </footer>
         </div>
     </section>
    </main>
