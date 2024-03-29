@@ -100,18 +100,39 @@
     transition: box-shadow .6s ease;
 }
 .aside1 th {
-    height: 30px;
+    height: 20px;
     background-color:var(--cor2);
     color: var(--cor1);
-    padding-left: 20px;
+    width: 20%;
     font-size: 1.2rem;
+}
+table{
+    text-align: center;
 }
 .aside1 table {
     margin: auto;
 }
 .aside1 td {
-    height: 50px;
-    padding-left: 20px;
+    height: 25px;
+}
+.Editar {
+    text-align: center;
+    background-color: rgb(15, 225, 15);
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.Excluir {
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+tbody tr:hover {
+    background-color: #FFF1CC;
 }
 table th {
     border: 1px solid black;
@@ -126,30 +147,6 @@ tbody td:hover {
     height: 16px;
     text-align: center;
 }
-.caixaCadastro {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: #00000090;
-    opacity: 0;
-    z-index: -1;
-}
-.caixaCadastro .ative {
-    opacity: 1;
-    z-index: 1;
-}
-.CaixaFormu {
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    width: 50vw;
-    margin: 15vh auto;
-    padding-bottom: 20px;
-    background-color: white;
-    box-shadow: 1px 1px 10px black;
-}
 .DataAss {
     display: flex;
     justify-content: space-between;
@@ -163,9 +160,36 @@ tbody td:hover {
     color: var(--cor1);
     text-align: center;
 }
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 30%;
+   background-color: var(--cor1);
+
+}
+.modal_container footer {
+    text-align: right;
+}
+.modal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px;
+    margin: 20px;
+ 
+}
 .Assinar input {
     font-family: var(--fontAmao);
     font-size: 30px;
     text-align: center;
+    margin: 40px;
+}
+.Assinar1 input{
+    font-size: 20px;
+    text-align: center;
+    margin: 40px;
 }
 
