@@ -1,14 +1,9 @@
 
-const abrircaixaCadastro = () => document.getElementById ('caixaCadastro')
-.classList.add('ative')
+const modal = document.getElementById ('modal_container')
 
-const fechocaixaCadastro = () => {
-    clearFields()
-    document.getElementById('caixaCadastro').classList.remove('active')
+function openModal (){
+    modal.classList.add('active')
 }
-
-document.getElementById('CadaMoto')
-    .addEventListener('click', abrircaixaCadastro)
-
-document.getElementById('fechocaixaCadastro')
-    .addEventListener('click', fechocaixaCadastro)
+function closeModal (){
+    modal.classList.remove('active')
+}
