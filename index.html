@@ -35,7 +35,7 @@
         </aside>
         <aside class="aside1">
 
-            <button id="CadaMoto" class="buttoncada">Cadastar e checar</button>
+            <button id="CadaMoto" class="buttoncada">Cadastrar e checar</button>
             <table>
                 <thead>
                     <tr>
@@ -60,17 +60,19 @@
                 </tbody>
             </table>
         </aside>
-        <div class="caixaCadastro" id="caixaCadastro">
-            <form id="CaixaFormu" class="CaixaFormu">
+        <div class="modal_container" id="modal_container">
+            <h1>Cadastrar e Checar</h1>
+            <form id="modal" class="modal">
                 <input type="number" name="numeroMota" id="numeroMota" placeholder="Número da Moto" required>
                 <input type="text" name="OK" id="Ok" placeholder="Moto em bom estado" required>
                 <input type="text" name="Nok" id="NOK" placeholder="Moto em mau estado">
                 <input type="text" name="OBS" id="OBS" placeholder="Observação da moto">
             </form>
-            <footer>
-                <button>Salvar</button>
-                <button>Cancelar</button>
-            </footer>
+                <footer>
+                    <button>Salvar</button>
+                    <button>Cancelar</button>
+                </footer>
+                <span>&times</span>
         </div>
     </section>
     <div class="DataAss" id="DataAss">
