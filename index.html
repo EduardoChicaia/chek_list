@@ -61,8 +61,9 @@
             </table>
         </aside>
         <div class="modal_container" id="modal_container">
-            <h1>Cadastrar a moto e Checar</h1>
+            
             <form id="modal" class="modal">
+                <h1>Cadastrar a moto e Checar</h1>
                 <input type="number" name="numeroMota" id="numeroMota" placeholder="Número da Moto" required>
                 <input type="text" name="OK" id="Ok" placeholder="Moto em bom estado" required>
                 <input type="text" name="Nok" id="NOK" placeholder="Moto em mau estado">
@@ -71,9 +72,8 @@
                     <button class="Salvar">Salvar</button>
                     <button class="Cancelar">Cancelar</button>
                 </footer>
+                <span class="X" draggable="true" onclick="closeModal()">&times</span>
             </form>
-                
-                <span class="X" draggable="true">&times</span>
         </div>
     </section>
     <div class="DataAss" id="DataAss">
@@ -84,8 +84,9 @@
             <input type="text" name="Assina" id="Assina" placeholder="Assinatura" required>
         </span>
     </div>
+    <footer class="Foot">&copy; Presente documento entrou em vigor em Março de 2024 &copy;</footer>
    </main>
-   <footer class="Foot">&copy; Presente documento entrou em vigor em Março de 2024 &copy;</footer>
+
 </body>
 
     <script src="krapido.js"></script>

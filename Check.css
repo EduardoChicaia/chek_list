@@ -116,11 +116,12 @@ table{
 }
 .Editar {
     text-align: center;
-    background-color: rgba(15, 225, 15, 0.89);
+    background-color: #1A967C;
     color: white;
     width: 50px;
     cursor: pointer;
     border-radius: 15px;
+    border: none;
 }
 .Excluir {
     text-align: center;
@@ -129,6 +130,7 @@ table{
     width: 50px;
     cursor: pointer;
     border-radius: 15px;
+    border: none;
 }
 tbody tr:hover {
     background-color: #FFF1CC;
@@ -139,7 +141,7 @@ table th {
     text-align: center;
 }
 .salvaCancelar {
-    margin-left: 209px;
+   margin-right: 240px;
 }
 .salvaCancelar button {
     cursor: pointer;
@@ -147,21 +149,18 @@ table th {
     padding: auto;
     height: 29px;
     width: 80px;
- 
 }
 .Salvar {
-    background-color: #56fa0a;
+    background-color: var(--cor2);
     border-radius: 15px;
     color: white;
-}
-.Salvar:hover {
-    background-image: linear-gradient(to left, #2d830588, #184603);
-   animation: 1s;
+    border: none;
 }
 .Cancelar {
-    background-color: #C90000;
+    background-color: var(--cor2);
     border-radius: 15px;
     color: white;
+    border: none;
 }
 .tdimagem img {
     width: 16px;
@@ -185,31 +184,34 @@ table th {
     position: fixed;
     top: 0;
     left: 0;
-    width: 45%;
-    height: 30vh;
+    width: 100%;
+    height: 100vh;
     background-color: #ada7958e;
-    box-shadow: 1px 1px  3px rgba(0, 0, 0, 0.411);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: none;
 }
 .modal_container footer {
     text-align: right;
 }
-.modal_container h1{
+.modal h1{
     text-align: center;
-    background-color: #c14599;
-    color: var(--cor1);
+    background-color: var(--cor2);
+    color: white;
+    margin-bottom: 15px;
 }
 .modal {
-    display: flex;
-    justify-content: space-between;
+    width: 50%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.773);
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.modal input{
     flex-wrap: wrap;
-    gap: 15px;
     padding: 0 20px;
     margin: 20px;
-    position: absolute; 
 }
 .active {
     display: flex;
@@ -218,7 +220,7 @@ table th {
   .active .modal {
     animation: modal .4s;
   }
-@keyframes drop {
+@keyframes modal {
     0%{
       top: -100px;
     }
@@ -243,8 +245,9 @@ table th {
 .X {
     position: absolute;
     right: 20px;
-    top: -8px;
+    top: -4px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
+    color: white;
 }
 
